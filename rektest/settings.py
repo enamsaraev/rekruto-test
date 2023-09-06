@@ -54,7 +54,7 @@ ROOT_URLCONF = 'rektest.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ['templates'],
+        'DIRS': ['/home/enamsaraev/rekruto-test/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
