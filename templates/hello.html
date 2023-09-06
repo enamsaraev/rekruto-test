@@ -4,6 +4,12 @@
     <title>Test</title>
   </head>
   <body>
-    <p>Hello, {% if data %} {{data.name}}! <br>{{data.message}}! {% endif %}</p>
+    <p>Hello
+        {% if data.name and data.message %}
+            , {{data.name}}! <br>{{data.message}}! 
+        {% else %}
+            <br>type ?name=...&message=...
+        {% endif %}
+    </p>
   </body>
 </html>
